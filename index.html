@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bike King Borders</title>
+    <link rel="stylesheet" href="/css/layout.css">
+    <link rel="stylesheet" href="/css/components.css">
+    <link rel="stylesheet" href="/css/styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zalando+Sans+Expanded:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+</head>
+
+<body> 
+    <!-- ADVERTISMENT -->
+    <header class="header-ad">
+        <div class="action-login-btn">
+            <img src="/FINAL-image/accounts-image.png" class="icon-login" alt="Account menu">
+
+            <div class="dropdown-menu">
+                <a href="#signup-popup">Sign-Up</a>
+                <a href="#login-popup">Log-in</a>
+            </div>
+
+        </div> <!--POPUP-->
+            <div id="signup-popup" class="popup">
+                <div class="popup-content">
+                    <a href="#" class="close-btn">&times;</a>
+                    <h3>Sign Up</h3>
+                    <div class="forms-area">
+                    <form>
+                    <input id="signup-email-main" type="email" name="email" placeholder="Enter your email"> 
+                    <input id="signup-name-main" type="text" name="text" placeholder="Enter your name">
+                    <input id="signup-password-main" type="password" name="password" placeholder="Enter your password">
+                    <button class="submit" type="submit">Sign Up</button>
+                    </form>
+                    </div>
+                </div>
+            </div>
+
+            <div id="login-popup" class="popup"> 
+                <div class="popup-content">
+                    <a href="#" class="close-btn">&times;</a>
+                    <h3>Log In</h3>
+                    <div class="forms-area">
+                    <form>
+                    <input id="login-email-main" type="email" name="login-email" placeholder="Enter your email"> 
+                    <input id="login-password-main" type="password" name="login-password" placeholder="Enter your password">
+                    <button class="submit" type="submit">Log In</button>
+                    </form>
+                    </div>
+                </div>
+            </div>
+
+            <div id="more-info" class="popup">
+                <div class="popup-content">
+                    <a href="#" class="close-btn">&times;</a>
+                    <h3>Don't fall behind on our Special Offers!</h3>
+                    <div class="forms-area">
+                    <form>
+                    <input id="offers-email-main" type="email" name="login-email" placeholder="Enter your email">
+                    <div class="consent-check">
+                    <input type="checkbox" name="marketing-consent">
+                    <span>By joining, you agree to receive updates, offers, and occasional news from Bike King Borders.</span>
+                    </div>
+                    <button class="submit" type="submit">Join Now</button>
+                    </form>
+                    </div>
+                </div>
+            </div>
+            
+            <h2> FREE SHIPPING for orders above £3500 </h2>
+        
+
+        <div class="action-socials-btn">
+            <img src="/FINAL-image/socials-image.png" class="icon-social" alt="Social media">
+            <div class="dropdown-menu2">               
+                <div class="socials-icon">
+                    <a href="https://www.facebook.com/">
+                        <img width="50" height="50" src="https://img.icons8.com/ios/50/facebook--v1.png" alt="facebook--v1">
+                    </a>
+                    <p>Facebook</p>
+                </div>
+
+                 <div class="socials-icon">
+                    <a href="https://www.instagram.com/">
+                        <img width="50" height="50" src="https://img.icons8.com/ios/50/instagram-new--v1.png" alt="instagram-new--v1">
+                    </a>
+                    <p>Instagram</p>
+                </div>
+                
+                <div class="socials-icon">
+                    <a href="https://www.tiktok.com/">
+                        <img width="50" height="50" src="https://img.icons8.com/ios/50/tiktok--v1.png" alt="tiktok--v1">
+                    </a>
+                    <p>Tiktok</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--MAIN HEADER WITH NAV-->
+    <nav>
+    <header class="main-header container">
+        <div class="left-group">
+            <a href="/">
+            <div class="site-title">Bike King Borders</div>
+            </a>
+
+            <ul class="nav-list">
+            <li><a href="/pages/bestsellerpage.html">Best Sellers</a></li>
+            <li><a href="/pages/mountainbikes.html">Mountain Bikes</a></li>
+            <li><a href="/pages/kidsbike.html">Kids Bikes</a></li>
+            <li><a href="/pages/bikesforhire.html">Bikes for Hire</a></li>
+            <li><a href="/pages/servicing.html">Servicing</a></li>
+            <li class="dropdown-biketrails">
+                <a href="/pages/biketrails.html">Bike Trails</a>
+                <ul class="dropdown-bike-content">
+                    <li><a href="/pages/biketrails.html#beginner">Beginner</a></li>
+                    <li><a href="/pages/biketrails.html#intermediate">Intermediate</a></li>
+                    <li><a href="/pages/biketrails.html#extreme">Extreme</a></li>
+                </ul>
+            </li>       
+        </ul>
+
+        </div>
+        <div class="more-info-btn">
+            <a href="#more-info">
+            <img src="/FINAL-image/FINAL-more-info-btn.png" alt="More information">
+            </a>
+        </div>    
+    </header>
+    </nav>
+    
+    <section class="hero hero-trails-video">
+        <video autoplay muted loop playsinline class="bg-video">
+            <source src="/videos/SONIC%20%20Cinematic%20Cycling%20Film%20%20SonyA7SIII.mp4" type="video/mp4">
+        </video>
+
+        <div class="hero-content">
+            <h1>New Releases.</h1>
+            <a href="/pages/mountainbikes.html" class="hero-btn">Shop Now</a>
+        </div>
+    </section>
+
+    <section class="hero-row-image">
+        <div class="hero-image-stuff">
+            <h2>Mountain Bikes</h2>
+                <a href="/pages/mountainbikes.html" class="hero-btn-row">Check Here</a>
+        </div>
+
+        <div class="hero-image-stuff2">
+            <h2>Bikes For Hire</h2>
+                <a href="/pages/bikesforhire.html" class="hero-btn-row">Check Here</a>
+        </div>
+
+        <div class="hero-image-stuff3">
+            <h2>Bike Trails</h2>
+                <a href="/pages/biketrails.html" class="hero-btn-row">Check Here</a>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="footer-name">
+            <p class="footer-text">Bike King Borders</p>
+            <h2>Push your limits with the right bike, expert support, and insider trail knowledge.</h2>
+            <p>Your home for premium bikes, rentals, servicing, and trail-ready advice in Fort William.</p>
+        </div>
+
+        <div class="footer-details">
+            <div class="footer-info">
+                <h3>Visit</h3>
+                <p>Fort William, Scotland UK</p>
+                <a href="https://maps.app.goo.gl/XkauKX8qzTCYvh9Z6">Open in Google Maps</a>
+            </div>
+
+            <div class="footer-info">
+                <h3>Hours</h3>
+                <p>Weekdays: 10AM to 10PM</p>
+                <p>Weekends: 12PM to 11PM</p>
+            </div>
+
+            <div class="footer-info">
+                <h3>Contact</h3>
+                <p>Email: bikekingborders@gmail.com</p>
+                <p>Phone: +971 50 1234 567</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

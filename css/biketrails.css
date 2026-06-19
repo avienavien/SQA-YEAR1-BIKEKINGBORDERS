@@ -1,0 +1,176 @@
+.nav-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 24px 16px 0;
+  
+}
+
+.trail-nav-btn {
+  padding: 12px 18px;
+  background: #282a2d;
+  color: #f7eaef;
+  text-decoration: none;
+  border-radius: 999px;
+  font-family: "Zalando Sans Expanded", sans-serif;
+  font-size: 15px;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.trail-nav-btn:hover {
+  transform: scale(1.05);
+  background: #740202;
+}
+
+.sub-title {
+  margin-bottom: clamp(1rem, 2vw, 1.75rem); /*1 rem is 16px*/
+}
+
+.sub-title h2 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: clamp(45px, 8vw, 90px);
+  color: #f7eaef;
+  margin-left: 10px;
+
+}
+
+.trails-section {
+  padding: clamp(30px, 5vw, 60px) clamp(16px, 4vw, 40px);
+  background-color: #202124;
+}
+
+.trails-row {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.trail-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  background: #f7eaef;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(40, 42, 45, 0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  margin-bottom: 10px;
+}
+
+.trail-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 28px rgba(0, 0, 0, 0.16);
+}
+
+.trail-details {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 18px;
+  flex: 1;
+}
+
+.trail-details h3 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 28px;
+  color: #282a2d;
+}
+
+.trail-tag,
+.trail-details p {
+  font-family: "Zalando Sans Expanded", sans-serif;
+  font-size: 12px;
+  line-height: 1.6;
+  color: #202124;
+}
+
+.trail-tag {
+  color: #740202;
+  font-weight: 700;
+}
+
+.trail-btn {
+  margin-top: auto;
+  padding: 12px 18px;
+  background: #282a2d;
+  color: #f7eaef;
+  text-decoration: none;
+  border-radius: 999px;
+  font-family: "Zalando Sans Expanded", sans-serif;
+  font-size: 12px;
+  text-align: center;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.trip-btn {
+  margin-top: 3px;
+  padding: 12px 18px;
+  background: #282a2d;
+  color: #f7eaef;
+  text-decoration: none;
+  border-radius: 999px;
+  font-family: "Zalando Sans Expanded", sans-serif;
+  font-size: 12px;
+  text-align: center;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.trail-btn:hover {
+  transform: scale(1.05);
+  background: #740202;
+}
+
+.trail-details img {
+  width: auto;
+  height: 230px;
+  border-radius: 10px;
+}
+
+@media (max-width: 1024px) {
+  .trails-row {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+
+
+@media (max-width: 700px) {
+  .nav-buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 20px 16px 0;
+  }
+
+  .hero-content {
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+    padding: 0 20px;
+  }
+
+  .trails-row {
+    grid-template-columns: 1fr;
+  }
+
+  .trail-btn {
+    width: 100%;
+  }
+
+  .trail-nav-btn {
+    width: 100%;
+    max-width: 260px;
+    text-align: center;
+  }
+
+  .trail-nav-item {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  
+}

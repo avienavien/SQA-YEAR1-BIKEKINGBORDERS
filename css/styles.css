@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    background-color:#202124;
+}
+
+.raleway-Raleway {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
+
+zalando-sans-expanded-FONT {
+  font-family: "Zalando Sans Expanded", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.bebas-neue-regular {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+/*ADVERTISEMENT STYLE*/
+
+.header-ad {
+    background-color:  #f7EAEF;
+}
+
+h2 {
+    font-family: "Zalando Sans Expanded", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    color: #202124;
+}
+
+.main-header {
+    background-color: #282A2D;
+}
+
+h1,
+.site-title {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 30px;
+    color:#f7EAEF;
+}
+
+.left-group a {
+    text-decoration: none;
+}
+
+.nav-list {
+    list-style: none;
+}
+
+.nav-list a {
+  position: relative;
+  text-decoration: none;
+  color: #f7EAEF;
+  font-family: "Zalando Sans Expanded", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  font-size: 14px;
+}
+
+/*makes a fake element, adjusts height to become a line, absolute to place it under text
+left to start it at the edge, 100% because to be as wide as link, background white. */
+.nav-list a::after {
+  content: ""; 
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 100%;
+  height: 2px;
+  background: #f7EAEF;
+  /*KINDA CONFUSING, but scalex basically makes the line invisible, and transform-origin
+  allows us to make it start from the right, then transition makes it smooth */
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.25s ease;
+}
+
+/*completes the look of the moving underline, allows us to expand the line to its full size(Till the end
+of its links), then origin to the left. so basically the link expands, while the hover effect shrinks to invisible
+(scalex(0))*/
+.nav-list a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.nav-list a {
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.nav-list a:hover {
+  transform: translateY(-2px); /*makes the color move up (since its y) slowly*/
+  color: #740202;
+}
+
+
+
+.hero h1 {
+    font-size: clamp(32px, 8vw, 96px);
+}
+
+.hero-btn {
+  padding: 10px 22px;
+  background: white;
+  color: black;
+  font-family: "Zalando Sans Expanded", sans-serif;
+  text-decoration: none;
+  border-radius: 999px;
+  font-weight: 600;
+
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.hero-btn:hover {
+  transform: scale(1.05);
+  background: #000000;
+  color:#f7EAEF}
+
+
+.hero-image-stuff h2, .hero-image-stuff2 h2, .hero-image-stuff3 h2 {
+   font-family: "Zalando Sans Expanded", sans-serif;
+    font-size: 35px;
+    color: #E8EAED;
+}
+
+/* clamp works as a minimum, preferred, and maximum pixels. so you set
+a minimum pixel, a viewport height, and a maximum pixel. */
+
+/* why viewport height? viewport height makes it depend on the height of the website.
+lets say your website is 1000px, then your preferred vh is set to 5vh, it will be calculating it using
+division. we calculate the vh using website height / 100. this makes VH very versatile, as it will not 
+have a fix value, but always depend on the height. */
+
+/*then now, the qoutient of that will be turned into pixels. if that pixels is lower than the
+pixel on the LEFT side, you will be using the pixel you set as minimum as your pixel. vice versa.*/
+
+.hero-btn-row {
+  padding: 10px 20px;
+  background: white;
+  color: black;
+  font-family: "Zalando Sans Expanded", sans-serif;
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: 400;
+  margin-top: clamp(8px, 1vh, 24px);
+
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.hero-btn-row:hover {
+  transform: scale(1.05);
+  background: #000000;
+  color:#f7EAEF}
+
+
+.dropdown-menu { /*SIGNUP DROPDOWN*/
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  background: white;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.dropdown-menu a {
+    text-decoration: none;
+    color: black;
+    font-family: "Zalando Sans Expanded", sans-serif;
+}
+.dropdown-menu a:hover {
+  background: #eee;
+  border-radius: 10px;
+}
+
+/*socials*/
+.dropdown-menu2 { /*SOCIALS DROPDOWN*/
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  background: white;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.dropdown-menu2 a {
+    text-decoration: none;
+    color: black;
+    font-family: "Zalando Sans Expanded", sans-serif;
+}
+.dropdown-menu2 a:hover {
+  background: #eee;
+  border-radius: 10px;
+}
+
+.socials-icon p {
+    font-family: "Zalando Sans Expanded", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: #202124;
+}
+
+h3 {
+    font-family: "Zalando Sans Expanded", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    color: #202124;
+    margin-bottom: 5px;
+
+}
+
+input[type="email"], input[type="text"], input[type="password"] {
+  padding: 10px 5px;
+  border-radius: 5px;
+  border: thin solid black;
+  background-color: white;
+  font-family: "Zalando Sans Expanded", sans-serif;
+  margin-bottom: 10px;
+}
+
+.consent-check {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin: 4px 0 10px;
+  text-align: left;
+  font-family: "Zalando Sans Expanded", sans-serif;
+  font-size: 11px;
+  line-height: 1.5;
+  color: #202124;
+}
+
+.consent-check input[type="checkbox"] {
+  margin-top: 2px;
+  flex-shrink: 0;
+}
+
+.submit {
+  padding: 10px 20px;
+  background: white;
+  color: black;
+  font-family: "Zalando Sans Expanded", sans-serif;
+  border-radius: 50px;
+  font-weight: 400;
+  margin-top: clamp(8px, 1vh, 24px);
+
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.submit:hover {
+   transform: scale(1.05);
+  background: #000000;
+  color:#f7EAEF
+}
+
+.site-footer {
+  background: linear-gradient(135deg, #17191b 0%, #282a2d 100%); /*(direction of start gradient, first color, last color)*/
+  border-top: 1px solid rgba(247, 234, 239, 0.12);
+}
+
+.footer-text {
+  font-family: "Zalando Sans Expanded", sans-serif;
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #b88b95;
+  margin-bottom: 14px;
+}
+
+.footer-name h2 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: clamp(32px, 5vw, 52px);
+  line-height: 0.95;
+  color: #f7eaef;
+  margin-bottom: 14px;
+}
+
+.footer-name p,
+.footer-info p,
+.footer-info a {
+  font-family: "Zalando Sans Expanded", sans-serif;
+  font-size: 13px;
+  line-height: 1.7;
+  color: rgba(247, 234, 239, 0.82);
+}
+
+.footer-info h3 {
+  font-family: "Zalando Sans Expanded", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #f7eaef;
+  margin-bottom: 12px;
+}
+
+.footer-info a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #f1c7d0;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.footer-info a:hover {
+  color: #ffffff;
+  border-color: currentColor;
+}
+
+@media (max-width: 1024px) { /*IPAD*/
+  h1,
+  .site-title {
+    font-size: 26px;
+  }
+
+  .nav-list a {
+    font-size: 13px;
+  }
+
+  .hero h1 {
+    text-align: center;
+  }
+
+  .hero-image-stuff h2,
+  .hero-image-stuff2 h2,
+  .hero-image-stuff3 h2 {
+    font-size: 30px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 700px) { /*PHONE*/
+  h1,
+  .site-title {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 13px;
+  }
+
+  .hero-btn,
+  .hero-btn-row,
+  .submit {
+    width: 100%;
+    max-width: 220px;
+    text-align: center;
+  }
+
+  .submit {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-image-stuff h2,
+  .hero-image-stuff2 h2,
+  .hero-image-stuff3 h2 {
+    font-size: 26px;
+  }
+}
