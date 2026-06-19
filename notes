@@ -1,9 +1,0 @@
-isolation: isolate; is there to keep the z-index layering self-contained inside .hero-trails-video.
-
-Without it, elements with z-index can sometimes interact with things outside the hero in weird ways, especially when you use negative z-index like this:
-
-
-
-flex-shrink: 1; means: “yes, you can shrink me if needed”
-flex-shrink: 0; means: “no, keep my size”
-
